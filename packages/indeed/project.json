@@ -1,0 +1,43 @@
+{
+  "sourceRoot": "packages/indeed/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/indeed",
+        "tsConfig": "packages/indeed/tsconfig.lib.json",
+        "packageJson": "packages/indeed/package.json",
+        "main": "packages/indeed/src/index.ts",
+        "assets": [
+          "packages/indeed/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/indeed/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/packages/indeed"
+      ],
+      "options": {
+        "jestConfig": "packages/indeed/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

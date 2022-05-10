@@ -1,0 +1,16 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.enable": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.lintTask.options": "${workspaceFolder}/.eslintrc.js",
+    "eslint.debug": true,
+    "editor.suggest.showWords": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "onFocusChange",
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.tsserver.log": "verbose"
+}
